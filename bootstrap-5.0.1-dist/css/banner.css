@@ -1,0 +1,20 @@
+/* BANNER TOP & BOTTOM*/
+.banner-top,
+.footer-banner{
+    background-color: var(--backgroundcolorDark);
+}
+.banner-top .container, footer{
+    color: var(--colorTextLight);
+    min-height: 100%;
+    font-size: 12px;
+}
+.banner-top li{
+    padding: 4px 8px;
+}
+.col-sm-2.banner-icons{
+    float: right;
+}
+footer li:after{
+    content: '|';
+    padding: 0 8px;
+}

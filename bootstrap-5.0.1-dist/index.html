@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">                
-    <link rel="stylesheet" href="css/style.css">     
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/banner.css">   
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/paralax.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <title>Stage Digital Pharma</title>
   </head>
   <body>
     <!-- BANNER -->
-    <div class="header-top">
-        <div class="container-fluid">
+    <div class="banner-top">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-10">banner top 1</div>
-                <div class="col-sm-2">banner top 2</div>
+                <div class="col-sm-10">
+                    <ul>
+                        <li><i class="far fa-clock"></i><a href="/openingsuren">Vandaag open tot 19:00</a></li>
+                        <li><i class="fas fa-mobile-alt"></i><a href="/tel">+32(0)89 00 00 00</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><a href="/adres">Testtestteststraat 345 - 4000 Eenderwaar</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 banner-icons justify-content-end">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -23,20 +41,22 @@
     <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <div class="col-md-8">
-                <a class="navbar-brand" href="#">logo</a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
             </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Zoek uw product" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <i class="fas fa-shopping-bag"></i>
+            <i class="far fa-user"></i>
           </div>
         </div>
     </header>
 
     <!-- NAV  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container navigation">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,10 +64,13 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                <button class="btn btn-outline-success" type="submit">Voorschrift doorsturen</button>
+                <button class="btn btn-primary" type="button">Voorschrift doorsturen</button>
               </li>
               <li class="nav-item">
-                <button class="btn btn-outline-success" type="submit">Reserveer product</button>
+                <button class="btn btn-primary" type="button">Reserveer product</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary" type="button">Promoties</button>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -72,39 +95,107 @@
       </nav>
 
     <!-- PARALAX -->
-    <div class="container" id="paralax">
-        <div class="containerf">
+    <div class="container-fluid" id="paralax">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12">paralax</div>
             </div>
-        </div>
+        </div> 
     </div>
 
     <!-- MAIN -->
     <main class="container" id="main">
         <div class="row">
-            <div class="col-sm-12">main</div>
+            <div class="col-sm-12">
+                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+                Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
+            </div>
         </div>
     </main>
 
     <!-- MAIN FOOTER -->
-    <div class="container" id="main-footer">
-        <div class="row">
-            <div class="col-sm-3">footer 1</div>
-            <div class="col-sm-3">footer 2</div>
-            <div class="col-sm-3">footer 3</div>
-            <div class="col-sm-3">footer 4</div>
+    <div class="main-footer-background">
+        <div class="container" id="main-footer">
+            <div class="row">
+                <div class="col-sm-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Testtestteststraat 345<br>
+                    4000 Eenderwaar<br>
+                    +32 (0)89 00 00 00<br>
+                    info@apotheek.be</p>
+                    
+                    <p>Verantwoordelijke apotheek:<br>
+                    John Doe</p>
+                    
+                    <p>RPR Turnhout<br>
+                    Vergunningsnr: 456789<br>
+                    Ondernemingsnr:<br>
+                    0786 567567</p>
+                </div>
+                <div class="col-sm-1">
+                    <i class="far fa-clock"></i>
+                    <p>Maandag<br>
+                    Dinsdag<br>
+                    Woensdag<br>
+                    Donderdag<br>
+                    Vrijdag<br>
+                    Zaterdag<br>
+                    Zondag</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>9:00 - 12:00 | 12:00 - 19:00<br>
+                    9:00 - 12:00 | 12:00 - 19:00<br>
+                    9:00 - 12:00 | 12:00 - 19:00<br>
+                    9:00 - 12:00 | 12:00 - 19:00<br>
+                    9:00 - 12:00 | 12:00 - 19:00<br>
+                    9:00 - 12:00 | 12:00 - 19:00<br>
+                    Gesloten</p>
+                </div>
+                <div class="col-sm-2">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <p>Persoonlijke begeleiding<br>
+                    Zeer discrete aanpak<br>
+                    Ruime kennis</p>
+                </div>
+                <div class="col-sm-3">
+                    <i class="fas fa-bars"></i>
+                    <p>Home<br>
+                    Openingsuren<br>
+                    Over ons<br>
+                    Producten<br>
+                    Voorschrift<br>
+                    Contact<br>
+                    Login<br>
+                    Winkelmand</p>
+                </div>
+            </div>
         </div>
     </div>
-    
     <!-- FOOTER BANNER BOTTOM  -->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-sm-10">banner bottom 1</div>
-            <div class="col-sm-2">banner bottom 2</div>
-        </div>
-    </footer>
+    <div class="footer-banner">
+        <footer class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul>
+                        <li>2021 - Apotheek NAAM</li>
+                        <li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
+                        <li><a href="/privacy-policy">Privacy policy</a></li>
+                        <li><a href="/cookies">Cookies</a></li>
+                        <li><a href ="/site-map">Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                <a href="https://www.digital-pharma.be" class target="_blank"> Created by Digital Pharma</a>   
+                </div>
+            </div>
+        </footer>
+    </div>
    
+<br>
+<br>
+<br>
+<br>
 
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -1,0 +1,6 @@
+/* PARALAX */
+#paralax{
+    min-height: 200px;
+    background: url(../images/background3.jpg) fixed center center no-repeat;
+    background-size: cover;
+}

@@ -1,30 +1,92 @@
-body{
-    background-color: white;
+/*
+WEBFONTS
+titels: Montserrat
+font-family: 'Montserrat', sans-serif;
+doorlopende teksten: Open Sans
+font-family: 'Open Sans', sans-serif;
+*/
+/*https://fontawesome.com/v5.15/icons/facebook-square?style=brands*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --primary: #00B2E3;
+    --secondary: #76BC21;
+    --backgroundcolorDark: #636569;
+    --backgroundcolorLight: #ffffff;
+    --backgroundcolorPrimary: #99D0E4;
+    --backgroundcolorSecondary: #E6F7D1;
+    --colorTextDark: #000000;
+    --colorTextLight: #FFFFFF;
 }
-.header-top{
-    min-height: 50px;
+html {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+   } 
+body {
+    position: static;
+    overflow: hidden;
+    background-color: var(--backgroundcolorLight);
+} 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Montserrat', sans-serif;
 }
-header{
-    background-color: #cccccc;
-    min-height: 50px
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
-nav{
-    background-color: grey;
-    min-height: 100px;
+a{
+    text-decoration: none;
+    color: var(--colorTextLight);
 }
-#paralax{
-    background-color: lightgray;
-    min-height: 400px;
+ul,
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-#main{
-    background-color: coral;
-    min-height: 600px;
+li{
+    float: left;
 }
-#main-footer{
-    background-color: lightsteelblue;
-    min-height: 200px;
+/* .btn.btn-primary{
+    background-color: var(--secondary);
+    color: var(--colorTextLight);
+    border: none;
+} */
+
+.btn,
+.btn.btn-primary {
+    border: none;
+    box-shadow: none;
+    background-color: var(--secondary);
+    border-radius: 6;
+    color: var(--colorTextLight);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 15px;
+    text-decoration: none;
+    vertical-align: inherit;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-footer{
-    background-color: #ccc;
-    min-height: 50px;
-}
+
+
+
+
+
+
+
+
+
+
+

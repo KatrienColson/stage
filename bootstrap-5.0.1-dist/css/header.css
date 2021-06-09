@@ -1,0 +1,12 @@
+/* HEADER */
+header{
+    background-color: var(--backgroundcolorLight);
+    min-height: 50%;
+}
+.navbar-brand{
+    width: auto;
+    height: auto;
+}
+.navbar-brand img{
+   width: 40%;
+}

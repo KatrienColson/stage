@@ -1,0 +1,14 @@
+/* NAVIGATIE */
+nav{
+    background-color: var(--primary);
+    color: var(--colorTextLight);
+    /* position: fixed; */
+    min-height: 50%;
+    height: auto;
+}
+.nav-item.nav-link{
+    color: green;
+}
+.nav-item{
+    margin-right: 2px;
+}
