@@ -1,0 +1,30 @@
+body{
+    background-color: white;
+}
+.header-top{
+    min-height: 50px;
+}
+header{
+    background-color: #cccccc;
+    min-height: 50px
+}
+nav{
+    background-color: grey;
+    min-height: 100px;
+}
+#paralax{
+    background-color: lightgray;
+    min-height: 400px;
+}
+#main{
+    background-color: coral;
+    min-height: 600px;
+}
+#main-footer{
+    background-color: lightsteelblue;
+    min-height: 200px;
+}
+footer{
+    background-color: #ccc;
+    min-height: 50px;
+}
