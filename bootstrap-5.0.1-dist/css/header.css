@@ -10,3 +10,89 @@ header{
 .navbar-brand img{
    width: 40%;
 }
+
+
+/*ZOEKEN*/
+.header-search-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search{
+    max-width: 150px;
+    margin:0;
+    /* margin: auto; */
+}
+.input-icons {
+    width: 100%;
+    /* margin-bottom: 10px; */
+    
+}
+.input-icons i {
+    position: absolute;
+} 
+.icon-search {
+    padding: 10px;
+    min-width: 150px;/*als je hier de width aanpast, dan moet je ook de with van de "search" aanpassen */
+    text-align: end;
+} 
+.input-field { 
+    width: 100%;
+    padding: 4px 10px;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.input-icons,
+.input-field,
+.icon-search{
+    color: var(--backgroundcolorDark);
+    border-color: var(--backgroundcolorDark);
+}
+
+/* form {
+    display: block;
+    margin-top: 0em;
+}
+.form-group{
+    position: relative;
+}
+.form-group {
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+} */
+
+
+/*PLACEHOLDER*/
+::-webkit-input-placeholder {
+    font-size: 12px;
+    /* text-align: center; */
+    padding-left: 4px;
+ }
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 12px;
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 12px;
+ }
+ :-ms-input-placeholder {
+       font-size: 12px;
+ }
+
+/*HEADER_RIGHT_ICONS*/
+ .header-icon-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .header-icon-box i,
+ .header-icon-box p{
+     font-size: 20px;
+     color: var(--backgroundcolorDark);
+ }
+ .header-icon-box p{
+     margin-bottom: 0;
+ }
+
+

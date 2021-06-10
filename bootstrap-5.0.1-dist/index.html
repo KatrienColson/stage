@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/paralax.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mainFooter.css">
+    <!-- <link rel="stylesheet" href="css/mediaquery.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <title>Stage Digital Pharma</title>
@@ -22,14 +23,14 @@
     <div class="banner-top">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-10 banner-top-left-icons">
                     <ul>
                         <li><i class="far fa-clock"></i><a href="/openingsuren">Vandaag open tot 19:00</a></li>
                         <li><i class="fas fa-mobile-alt"></i><a href="/tel">+32(0)89 00 00 00</a></li>
                         <li><i class="fas fa-map-marker-alt"></i><a href="/adres">Testtestteststraat 345 - 4000 Eenderwaar</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2 banner-icons justify-content-end">
+                <div class="col-sm-2 banner-top-right-icons">
                     <i class="fab fa-whatsapp"></i>
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-facebook-square"></i>
@@ -39,23 +40,37 @@
     </div>
     <!-- HEADER  -->
     <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <div class="col-md-8">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
-            </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Zoek uw product" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <i class="fas fa-shopping-bag"></i>
-            <i class="far fa-user"></i>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+              </div>
+              <div class="col-md-3 header-search-box">
+                  <div class="search">
+                      <form method="get" accept-charset="utf-8" action="/producten/zoeken" _lpchecked="1">
+                          <div class="form-group form-group-text form-group-keywords">
+                              <div class="input-icons">
+                                  <i class="fa fa-search icon-search"></i>
+                                  <div class="form-group-content form-group-content-text col-xs-12">
+                                  <input type="text" class="input-field" name="keywords" autocomplete="off" placeholder="Zoek op product" id="keywords">
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                </div>
+                  <div class="col-md-1 header-icon-box">
+                  <i class="fas fa-shopping-bag header-icons"></i>
+                  <p>|</p>
+                  <i class="far fa-user header-icons"></i>
+                  </div>
           </div>
-        </div>
+      </div>
     </header>
 
+
     <!-- NAV  -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container navigation">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,7 +78,6 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                 <button class="btn btn-primary" type="button">Voorschrift doorsturen</button>
               </li>
               <li class="nav-item">
@@ -78,6 +92,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Openingsuren</a>
               </li>
+            
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Over ons
@@ -90,7 +105,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-            </div>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -116,67 +132,77 @@
 
     <!-- MAIN FOOTER -->
     <div class="main-footer-background">
-        <div class="container" id="main-footer">
-            <div class="row">
-                <div class="col-sm-3">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Testtestteststraat 345<br>
-                    4000 Eenderwaar<br>
-                    +32 (0)89 00 00 00<br>
-                    info@apotheek.be</p>
-                    
-                    <p>Verantwoordelijke apotheek:<br>
-                    John Doe</p>
-                    
-                    <p>RPR Turnhout<br>
-                    Vergunningsnr: 456789<br>
-                    Ondernemingsnr:<br>
-                    0786 567567</p>
-                </div>
-                <div class="col-sm-1">
-                    <i class="far fa-clock"></i>
-                    <p>Maandag<br>
-                    Dinsdag<br>
-                    Woensdag<br>
-                    Donderdag<br>
-                    Vrijdag<br>
-                    Zaterdag<br>
-                    Zondag</p>
-                </div>
-                <div class="col-sm-3">
-                    <p>9:00 - 12:00 | 12:00 - 19:00<br>
-                    9:00 - 12:00 | 12:00 - 19:00<br>
-                    9:00 - 12:00 | 12:00 - 19:00<br>
-                    9:00 - 12:00 | 12:00 - 19:00<br>
-                    9:00 - 12:00 | 12:00 - 19:00<br>
-                    9:00 - 12:00 | 12:00 - 19:00<br>
-                    Gesloten</p>
-                </div>
-                <div class="col-sm-2">
-                    <i class="fas fa-hand-holding-medical"></i>
-                    <p>Persoonlijke begeleiding<br>
-                    Zeer discrete aanpak<br>
-                    Ruime kennis</p>
-                </div>
-                <div class="col-sm-3">
-                    <i class="fas fa-bars"></i>
-                    <p>Home<br>
-                    Openingsuren<br>
-                    Over ons<br>
-                    Producten<br>
-                    Voorschrift<br>
-                    Contact<br>
-                    Login<br>
-                    Winkelmand</p>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="container" id="main-footer">
+          <div class="row">
+              <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12 footer-col-1">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Testtestteststraat 345<br>
+                  4000 Eenderwaar<br>
+                  +32 (0)89 00 00 00<br>
+                  info@apotheek.be</p>
+                  
+                  <p>Titularis:<br>
+                  John Doe</p>
+                  
+                  <p>RPR Turnhout<br>
+                  Vergunningsnr: 456789<br>
+                  Ondernemingsnr:<br>
+                  0786 567567</p>
+                  </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col-1">
+                  <i class="far fa-clock"></i>
+
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <ul class="footer-openingsuren">
+                              <li>Maandag</li>
+                              <li>Dinsdag</li>
+                              <li>Woensdag</li>
+                              <li>Donderdag</li>
+                              <li>Vrijdag</li>
+                              <li>Zaterdag</li>
+                              <li>Zondag</li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6">
+                          <ul class="">
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>9:00 - 12:00 | 13:00 - 19:00</li>
+                              <li>Gesloten</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-col-1">
+                  <i class="fas fa-hand-holding-medical"></i>
+                  <p>Persoonlijke begeleiding<br>
+                  Zeer discrete aanpak<br>
+                  Ruime kennis</p>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 footer-col-1">
+                  <i class="fas fa-bars"></i>
+                  <p>Home<br>
+                  Openingsuren<br>
+                  Over ons<br>
+                  Producten<br>
+                  Voorschrift<br>
+                  Contact<br>
+                  Login<br>
+                  Winkelmand</p>
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- FOOTER BANNER BOTTOM  -->
     <div class="footer-banner">
         <footer class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-8 banner-bottom-left">
                     <ul>
                         <li>2021 - Apotheek NAAM</li>
                         <li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
@@ -185,7 +211,7 @@
                         <li><a href ="/site-map">Sitemap</li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 banner-bottom-right-create">
                 <a href="https://www.digital-pharma.be" class target="_blank"> Created by Digital Pharma</a>   
                 </div>
             </div>

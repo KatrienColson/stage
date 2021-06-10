@@ -2,13 +2,24 @@
 nav{
     background-color: var(--primary);
     color: var(--colorTextLight);
-    /* position: fixed; */
     min-height: 50%;
-    height: auto;
+    /* height: auto; */
 }
 .nav-item.nav-link{
     color: green;
 }
-.nav-item{
-    margin-right: 2px;
+.navigation{
+    display: flex;
+    flex-direction: row;
 }
+.navbar-nav{
+    margin-right: 2px;
+    justify-content: space-between;
+}
+ul.navbar-nav{
+    width:100%;
+}
+
+
+
+

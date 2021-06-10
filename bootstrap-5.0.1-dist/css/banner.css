@@ -2,19 +2,33 @@
 .banner-top,
 .footer-banner{
     background-color: var(--backgroundcolorDark);
-}
-.banner-top .container, footer{
     color: var(--colorTextLight);
     min-height: 100%;
     font-size: 12px;
 }
+/*BANNER TOP*/
 .banner-top li{
     padding: 4px 8px;
 }
-.col-sm-2.banner-icons{
-    float: right;
+.banner-top-left-icons ul li a{
+    margin-left: 10px;
+    margin-right: 8px;
 }
+.banner-top-right-icons i{
+    padding-left: 8px;
+}
+.banner-top-right-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*BANNER FOOTER*/
 footer li:after{
     content: '|';
     padding: 0 8px;
+}
+.banner-bottom-right-create{
+    display: flex;
+    justify-content: flex-end;
 }
