@@ -19,7 +19,8 @@ header{
     align-items: center;
 }
 .search{
-    max-width: 150px;
+    max-width: 172px;
+    max-height: 31px;
     margin:0;
     /* margin: auto; */
 }
@@ -30,10 +31,12 @@ header{
 }
 .input-icons i {
     position: absolute;
+    font-size: 14px;
 } 
 .icon-search {
     padding: 10px;
-    min-width: 150px;/*als je hier de width aanpast, dan moet je ook de with van de "search" aanpassen */
+    min-width: 172px;/*als je hier de width aanpast, dan moet je ook de with van de "search" aanpassen */
+    max-height: 31px;
     text-align: end;
 } 
 .input-field { 
@@ -88,7 +91,7 @@ header{
  }
  .header-icon-box i,
  .header-icon-box p{
-     font-size: 20px;
+     font-size: 24px;
      color: var(--backgroundcolorDark);
  }
  .header-icon-box p{

@@ -6,6 +6,11 @@
     min-height: 100%;
     font-size: 12px;
 }
+.banner-top a,
+.footer-banner a{
+    font-size: 14px;
+}
+
 /*BANNER TOP*/
 .banner-top li{
     padding: 4px 8px;
@@ -14,14 +19,19 @@
     margin-left: 10px;
     margin-right: 8px;
 }
+.banner-top-left-icons ul li i{
+    font-size: 14px;
+}
 .banner-top-right-icons i{
     padding-left: 8px;
+    font-size: 14px;
 }
 .banner-top-right-icons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 
 /*BANNER FOOTER*/
 footer li:after{

@@ -1,16 +1,16 @@
 /* MAINFOOTER */
 .main-footer-background{
     background-color: var(--primary);
+    padding-top: 40px;
 }
 #main-footer{
     min-height: 100%;
     color: var(--colorTextLight);
 }
+.main-footer-background i{
+    padding-bottom: 20px;
+}
 .footer-top ul {
-    /* list-style-type: none; */
     margin: 0 0 0 15px;
     padding: 0;
-}
-.footer-openingsuren ul{
-
 }
