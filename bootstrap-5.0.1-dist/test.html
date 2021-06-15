@@ -12,225 +12,161 @@
 body{
     background-color: grey;
 }
-/*#paralax{
-    min-height: 200px;
-    background: url(../images/background3.jpg) fixed center center no-repeat;
-    background-size: cover;
-} */
-/* .content-wrapper{
-    margin-top: 50px;
-} */
-/* .content {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-} */
-/* h3 {
-    color: #000;
-    font-size: 14px;
-    margin: 10px 0 10px 0;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-a.raadpleeg {
-    color: #000;
-}
-.content .openingsuren {
-    margin-bottom: 15px;
-}
-.content-block-transparant{
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    text-align: center;
-}
-.content-block-transparant img{
-    max-height: 40px;
-    width: auto;
-}
-.container.paralax .row{
-    display: flex;;
-    justify-content: flex-end;
-}
-.content-block-transparant i{
-    font-size: 50px;
-    color: var(--backgroundcolorDark);
-}
-.box-openingsuren{
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-.openingsuren{
-    position: relative;
-   
-}
-.week-day{
-    position: relative;
+.container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
 
 }
-.uur{
-    position: absolute;
-    padding-left: 100px;
-
-} */
-/*--------------------------*/
-.container-end{
-    display: flex;
-    justify-content: flex-end;
+.row{
+  display: flex;
 }
-.test1{
-    width: auto;
-    height: auto;
-    border:1px solid green;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-
+/*LINKS VAN DE PARALAX*/
+.box-deel-links{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin:0;
 }
-.test2{
-    display: flex;
-    width: auto;
-    height: auto;
-    border:1px solid green;
-
-}
-.colom1, .colom2{
-    border:2px solid grey;
-    width: 200px;
-
-}
-.col1-top, 
-.col2-top,
-.col1-bottom, 
-.col2-bottom{
-    border: 1px solid blue;
-    font-size: 14px;
-    color: var(--backgroundcolorDark);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    text-align: center;
-    height: 150px;
+.deel1{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  padding: 20px;
 }
 
 .openingsuren{
-    position: relative;
-   
+  border: 1px solid blue;
+  width: 300px;
+  /* flex-grow: 1; */
 }
 .week-day{
-    position: relative;
-
+ border: 1px solid green;
 }
-.uur{
-    position: absolute;
-    padding-left: 100px;
+span.uur{
+  padding-left: 20px;
 }
 
-.icon-paralax{
-    font-size: 50px;
+/*RECHTS VAN DE PARALAX*/
+.box-deel-rechts{
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin:0;
+  justify-content: center;
+}
+.deel2{
+  flex-grow: 1;
+}
+/* .box1{
+  display: flex;
+  background: hotpink;
+
+}*/
+.box2{
+  display: flex;
+  width: 100%;
+  background-color: red;
+} 
+.row2{
+  display: flex;
+  flex-grow: 1;
+}
+.knoppen{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px 0;
+  justify-content: center;
+  margin: 10px;
+  width: 40%;
+  flex-grow: 1;
 }
 
-/*--------------------*/
-.button-top{
-    border: 2px solid red;
-}
-.button-bottom{
-    border:1px solid green;
-}
+
 
     </style>
 </head>
   
 <body>
 
+<div class="container">
+  <div class="box1">
+    <div class="row">
+      <div class="box-deel-links">
+      <div class="col-6 deel1">
+       
+        <h3>Digital Pharma</h3>
+        <p>TesttesttestStraat 345, 4000 Eenderwaar</p>
+        <div class="openingsuren">
+          <div class="dag dag1">
+            <span class="week-day">Maandag</span>
+            <span class="uur">9:00-12:00 | 13:00-19:00</span>
+          </div>
+          <div class="dag dag1">
+            <span class="week-day">Dinsdag</span>
+            <span class="uur">9:00-12:00 | 13:00-19:00</span>
+          </div>
+          <div class="dag dag1">
+            <span class="week-day">Woensdag</span>
+            <span class="uur">9:00-12:00 | 13:00-19:00</span>
+          </div>
+          <div class="dag dag1">
+            <span class="week-day">Donderdag</span>
+            <span class="uur">9:00-12:00 | 13:00-19:00</span>
+          </div>
+          <div class="dag dag1">  
+            <span class="week-day">Vrijdag</span>
+            <span class="uur">9:00-12:00 | 13:00-19:00</span>
+          </div>
+          <div class="dag dag1">
+            <span class="week-day">Zaterdag</span>
+            <span class="uur">9:00-12:00</span>
+          </div>
+          <div class="dag dag1">
+            <span class="week-day">Zondag</span>
+            <span class="uur">Gesloten</span>
+          </div>
+        </div>
+        <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>   
+       
+      </div>
+    </div>
+    <div class="box-deel-rechts">
+      <div class="col-6 deel2">
+        <h3>TEST 2</h3>
+          <div class="box2">
+            <div class="row row2">
 
-    <!-- PARALAX -->
-    <!-- <div class="container-fluid" id="paralax">
-        <div class="content-wrapper">
-          <div class="container paralax">
-              <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 box-openingsuren"> 
-                 
-                  <div class="paralax-left">
-                    <h3>Digital Pharma</h3>
-                    <p>TesttesttestStraat 345, 4000 Eenderwaar</p>
-  
-                    <div class="openingsuren">
-                      <div class="week-day">
-                        Maandag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Dinsdag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Woensdag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Donderdag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Vrijdag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Zaterdag
-                      </div>
-                      <div class="uur">
-                        9:00-12:00 | 13:00-19:00
-                      </div>
-                      <div class="week-day">
-                        Zondag
-                      </div>
-                      <div class="uur">
-                        Gesloten
-                      </div>
-                    </div>
-                    <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>                    
-                    </div>
-                
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                  <div class="content-block-transparant">
-                    <p><i class="fas fa-file-medical"></i></p>
-                    <h3>Voorschrift doorsturen</h3>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                  <div class="content-block-transparant">
-                    <p><i class="fas fa-shopping-bag header-icons"></i></p>
-                    <h3>Reserveer uw product</h3>
-                  </div>
-                </div>
-  
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                  <div class="content-block-transparant">
-                    <p><i class="fas fa-clipboard"></i></p>
-                    <h3>Contacteer ons</h3>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                  <div class="content-block-transparant">
-                    <p><i class="fas fa-user-tag"></i></p>
-                    <h3>Over ons</h3>
-                  </div>
-                </div>
+
+              <div class="col-6 knoppen">KNOP 1</div>
+              <div class="col-6 knoppen">KNOP 2</div>
+
+
+
+
+              <div class="col-6 knoppen">KNOP 3</div>
+              <div class="col-6 knoppen">KNOP 4</div>
+
 
             </div>
-          </div> 
-        </div>
-      </div> -->
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="container container-end">
+
+
+<!-- <div class="container container-end">
 <div class="row">
     <div class="test1">
         <h3>Digital Pharma</h3>
@@ -308,74 +244,11 @@ a.raadpleeg {
         </div>
     </div>
 </div>
-</div>
+</div> -->
 
 
-<div class="container">
-<div class="d-flex flex-row ">
-    <div class="w-50 p-2 kolom10">
-        <div class="test1">
-            <h3>Digital Pharma</h3>
-            <p>TesttesttestStraat 345, 4000 Eenderwaar</p>
-            <div class="openingsuren">
-                <div class="week-day">
-                  Maandag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Dinsdag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Woensdag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Donderdag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Vrijdag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Zaterdag
-                </div>
-                <div class="uur">
-                  9:00-12:00 | 13:00-19:00
-                </div>
-                <div class="week-day">
-                  Zondag
-                </div>
-                <div class="uur">
-                  Gesloten
-                </div>
-              <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>   
-            </div>
-        </div>
 
-    </div>
-        <div class="p-4 button-top">
-            <div class="flex-shrink-1 p-4">Flex item</div>
-            <div class="flex-shrink-1 p-4">Flex item</div>
-        </div>
-        <div class="p-4 button-bottom">
-            <div class="flex-shrink-1 p-4">Flex item</div>
-            <div class="flex-shrink-1 p-4">Flex item</div>
-        </div>
-    </div>
-</div>
-</div>
+
 </body>
   
 </html>

@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/paralax.css">
+    <link rel="stylesheet" href="css/reserveren.css">
+    <link rel="stylesheet" href="css/voorschrift.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/wachtdienst.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mainFooter.css">
     <!-- <link rel="stylesheet" href="css/mediaquery.css"> -->
@@ -165,6 +169,7 @@
                       Gesloten
                     </div>
                   </div>
+                  <br>
                   <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>                    
                   </div>
               
@@ -182,13 +187,13 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 boven">
                 <div class="content-block-transparant">
                   <p><i class="fas fa-clipboard"></i></p>
                   <h3>Contacteer ons</h3>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 boven">
                 <div class="content-block-transparant">
                   <p><i class="fas fa-user-tag"></i></p>
                   <h3>Over ons</h3>
@@ -199,18 +204,118 @@
       </div>
     </div>
 
-    <!-- MAIN -->
-    <main class="container" id="main">
-        <div class="row">
+    <!-- TE RESERVEREN PRODUCTEN -->
+    <section class="container" id="main">
+        <div class="row reserveerSection">
+          <h2>Te reserveren producten in de kijker</h2>
+            <div class="col-sm-12">
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/med-foto-1.jpg" class="card-img-top image-reserveer" alt="card-group-image">
+                  <div class="card-body card-tekst">
+                    <h5 class="card-title">titel naam</h5>
+                    <p class="card-text"> € 99,99</p>
+                    <button class="btn btn-primary" type="button">In winkelmandje</button>
+                  </div>
+                 </div>
+                <div class="card">
+                  <img src="images/med-foto-2.jpg" class="card-img-top" alt="card-group-image">
+                  <div class="card-body card-tekst">
+                    <h5 class="card-title">titel naam</h5>
+                    <p class="card-text"> € 99,99</p>
+                    <button class="btn btn-primary" type="button">In winkelmandje</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/med-foto-3.jpg" class="card-img-top" alt="card-group-image">
+                  <div class="card-body card-tekst">
+                    <h5 class="card-title">titel naam</h5>
+                    <p class="card-text"> € 99,99</p>
+                    <button class="btn btn-primary" type="button">In winkelmandje</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/med-foto-4.jpg" class="card-img-top" alt="card-group-image">
+                  <div class="card-body card-tekst">
+                    <h5 class="card-title">titel naam</h5>
+                    <p class="card-text"> € 99,99</p>
+                    <button class="btn btn-primary" type="button">In winkelmandje</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </section>
+
+<!-- VOORSCHRIFT -->
+    <section class="container-fluid" id="main">
+      <div class="row voorschriftSection">
+          <div class="col-lg-6 col-md-6 col-sm-6 tekstVoorschrift">
+            <h2>Voorschrift doorsturen</h2>
+            <p class="lopendetekstVoorschrift">Heb je een voorschrit gekregen of een medicatielijsstje bij de hand?  Stuur het ons door in 4 gemakkelijke stappen.  
+              Wij geven je een seintje zodra je je reservatie kan komen oppikken in de apotheek.
+            </p>
+            <button class="btn btn-primary buttonVoorschrift" type="button">Voorschrift doorsturen</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="images/voorschrift.jpg" class="fotoVoorschrift" alt="voorschrift">
+          </div>
+      </div>
+    </section>
+<!-- ONS TEAM -->
+    <section class="container" id="main">
+      <div class="row teamSection">
+        <h2>Ons team</h2>
+          <div class="col-lg-6 col-md-6 col-sm-6 cardTeamSection">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-sm-6">
+                  <img src="images/persoon1.jpg" class="img-fluid fotoTeamSection" alt="card-horizontal-image">
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="card-body">
+                    <h5 class="card-title">NAAM</h5>
+                    <hr>
+                    <p class="card-text">Functie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 cardTeamSection">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-sm-6">
+                  <img src="images/persoon2.jpg" class="img-fluid fotoTeamSection" alt="card-horizontal-image">
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="card-body">
+                    <h5 class="card-title">NAAM</h5>
+                    <hr>
+                    <p class="card-text">Functie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  <!-- WACHTDIENSTEN -->
+    <section class="container-fluid wachtdienstFluid">
+      <div class="container">
+        <div class="row wachtdienstSection">
+          <h2>Wachtdiensten</h2>
             <div class="col-sm-12">
                 In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
                 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
                 Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
             </div>
         </div>
-    </main>
-
-    <!-- MAIN FOOTER -->
+      </div>
+    </section>
+  <!-- MAIN FOOTER -->
     <div class="main-footer-background">
       <div class="container" id="main-footer">
           <div class="row">

@@ -1,0 +1,16 @@
+.teamSection{
+    padding: 40px 0;
+}
+.fotoTeamSection{
+    padding: 20px;
+}
+.cardTeamSection{
+    padding-top: 40px;
+    padding-left: 0;
+}
+.cardTeamSection:last-child{
+    margin-right: 0;
+}
+.card-body{
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+.wachtdienstSection{
+    padding: 40px 0;
+    background-color: grey;
+}
+.wachtdienstFluid{
+    background-color: var(--backgroundcolorPrimary);
+}
