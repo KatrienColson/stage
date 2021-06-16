@@ -7,7 +7,6 @@
 
 h3 {
     color: #000;
-    font-size: 14px;
     margin: 10px 0 10px 0;
 }
 a.raadpleeg {
@@ -18,13 +17,13 @@ a.raadpleeg {
 }
 .content-block-transparant{
     background-color: rgba(255, 255, 255, 0.7);
-    /* padding: 30px; */
-    height: 45%;
+    /* height: 45%; */
     text-align: center;
     margin-top: 20px;
+    /*margin-bottom: 20px; */
 }
-.content-block-transparant img{
-    max-height: 40px;
+.content-block-transparant i{
+    /* max-height: 40px; */
     width: auto;
 }
 .container.paralax .row{
@@ -34,13 +33,14 @@ a.raadpleeg {
 .content-block-transparant i{
     font-size: 50px;
     color: var(--backgroundcolorDark);
-    padding: 29px 0;
+    /* padding: 29px 0; */
 }
 .box-openingsuren{
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 40%;
     padding: 20px 0;
 }
@@ -48,6 +48,10 @@ a.raadpleeg {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+}
+.adresParalax{
+    font-size: 1rem;
 }
 .paralax-left{
     position: relative;
@@ -57,7 +61,6 @@ a.raadpleeg {
 }
 .week-day{
     position: relative;
-
 }
 .uur{
     position: absolute;

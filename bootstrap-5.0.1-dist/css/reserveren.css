@@ -1,24 +1,31 @@
 .reserveerSection{
     padding: 40px 0;
 }
-.card{
+.rowReserveer{
+    margin: 0;
+    padding: 0;
     display: flex;
+}
+.card.cardReserveer{
     border: 1px solid var(--secondary);
-    margin-right: 20px;
-    border-radius: 0;
-}
-.card:last-child{
-    margin-right: 0;
-}
-.card-tekst{
-    text-align: center;
-    align-items: flex-end;
+    max-width: 260px;
+    height: 297px;
 }
 .card-img-top{
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 200px;
+    width: 133px;
+    height: 133px;
     object-fit: cover;
+}
+.card-text{
+    padding:0;
+    margin: 0;
+}
+.card-title.card-titleReserveer{
+    margin-top: -30px;
+}
+.card-text.cad-textReserveer{
+    padding-bottom: 20px;
 }

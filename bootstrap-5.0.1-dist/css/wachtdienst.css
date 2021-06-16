@@ -1,7 +1,33 @@
 .wachtdienstSection{
     padding: 40px 0;
-    background-color: grey;
+}
+h2.titleLight{
+    color: white;
 }
 .wachtdienstFluid{
     background-color: var(--backgroundcolorPrimary);
 }
+i.fas.fa-mortar-pestle,
+i.fas.fa-stethoscope,
+i.fas.fa-tooth{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+hr.lineWachtdiensten{
+    border: 2px solid var(--primary);
+}
+.card.cardWachtdiensten{
+    border: none;
+    max-width: 314px;
+    height: 314px;
+}
+.rowWachtdiensten{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-title{
+    padding-top: 40px;
+}
+

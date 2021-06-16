@@ -1,6 +1,7 @@
 /* BANNER TOP & BOTTOM*/
 .banner-top,
 .footer-banner{
+    display: flex;
     background-color: var(--backgroundcolorDark);
     color: var(--colorTextLight);
     min-height: 100%;
@@ -37,6 +38,9 @@
 footer li:after{
     content: '|';
     padding: 0 8px;
+}
+.banner-bottom-left{
+    display: flex;
 }
 .banner-bottom-right-create{
     display: flex;
