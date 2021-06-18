@@ -21,6 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <title>Stage Digital Pharma</title>
+    <style>
+
+.rowReserveer .col{
+    justify-content: space-evenly;
+}
+.rowReserveer .col:last-child{
+    align-content: flex-end;
+}
+
+
+    </style>
   </head>
   <body>
     <!-- BANNER -->
@@ -193,14 +204,26 @@
                     <h4>Over ons</h4>
                 </div>
               </div>
-              
+
+              <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 boven">
+                <div class="content-block-transparant">
+                  <i class="fas fa-clipboard"></i>
+                  <h4>Contacteer ons</h4>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 boven">
+                <div class="content-block-transparant">
+                  <i class="fas fa-user-tag"></i>
+                  <h4>Over ons</h4>
+                </div>
+              </div> -->
             </div>
         </div> 
       </div>
     </div>
 
     <!-- TE RESERVEREN PRODUCTEN -->
-    <section class="container">
+    <section class="container" id="main">
         <div class="row reserveerSection">
           <h2>Te reserveren producten in de kijker</h2>
           <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-3 rowReserveer">
@@ -249,7 +272,7 @@
       </section>
 
 <!-- VOORSCHRIFT -->
-    <section class="container-fluid">
+    <!-- <section class="container-fluid" id="main">
       <div class="row voorschriftSection">
           <div class="col-lg-6 col-md-6 col-sm-6 tekstVoorschrift">
             <h2>Voorschrift doorsturen</h2>
@@ -262,9 +285,9 @@
             <img src="images/voorschrift.jpg" class="fotoVoorschrift" alt="voorschrift">
           </div>
       </div>
-    </section>
+    </section> -->
 <!-- ONS TEAM -->
-    <section class="container">
+    <!-- <section class="container" id="main">
       <div class="row teamSection">
         <h2>Ons team</h2>
           <div class="col-lg-6 col-md-6 col-sm-6 cardTeamSection">
@@ -300,10 +323,10 @@
             </div>
           </div>
       </div>
-    </section>
+    </section> -->
 
   <!-- WACHTDIENSTEN -->
-    <section class="container-fluid wachtdienstFluid">
+    <!-- <section class="container-fluid wachtdienstFluid">
       <div class="container">
         <div class="row wachtdienstSection">
           <h2 class="titleLight">Wachtdiensten</h2>
@@ -342,7 +365,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   <!-- MAIN FOOTER -->
     <div class="main-footer-background">
       <div class="container" id="main-footer">
@@ -441,11 +464,12 @@
                         <li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
                         <li><a href="/privacy-policy">Privacy policy</a></li>
                         <li><a href="/cookies">Cookies</a></li>
-                        <li><a href ="/site-map">Sitemap</a></li>
+                        <li><a href ="/site-map">Sitemap</li>
                     </ul>
                 </div>
                 <div class="col-sm-4 banner-bottom-right-create">
-                <a href="https://www.digital-pharma.be" class target="_blank"> Created by Digital Pharma</a>   
+                  <p>Created by Digital Pharma</p>
+                <!-- <a href="https://www.digital-pharma.be" class target="_blank"> Created by Digital Pharma</a>    -->
                 </div>
             </div>
         </footer>

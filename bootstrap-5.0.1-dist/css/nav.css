@@ -15,6 +15,7 @@ nav{
 .navbar-nav{
     margin-right: 2px;
     justify-content: space-between;
+    align-items: center;
 }
 ul.navbar-nav{
     width:100%;

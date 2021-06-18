@@ -86,13 +86,14 @@ header{
 /*HEADER_RIGHT_ICONS*/
  .header-icon-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
  }
  .header-icon-box i,
  .header-icon-box p{
      font-size: 24px;
      color: var(--backgroundcolorDark);
+     padding-right: 12px;
  }
  .header-icon-box p{
      margin-bottom: 0;

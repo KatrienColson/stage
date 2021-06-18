@@ -5,7 +5,6 @@
     background-color: var(--backgroundcolorDark);
     color: var(--colorTextLight);
     min-height: 100%;
-    font-size: 12px;
 }
 .banner-top a,
 .footer-banner a{
@@ -24,8 +23,7 @@
     font-size: 14px;
 }
 .banner-top-right-icons i{
-    padding-left: 8px;
-    font-size: 14px;
+    padding-right: 12px;
 }
 .banner-top-right-icons {
     display: flex;
@@ -41,8 +39,12 @@ footer li:after{
 }
 .banner-bottom-left{
     display: flex;
+    align-items: center;
 }
 .banner-bottom-right-create{
     display: flex;
     justify-content: flex-end;
+}
+.banner-bottom-right-create a{
+    padding-right: 12px;
 }

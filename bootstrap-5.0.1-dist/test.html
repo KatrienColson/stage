@@ -24,7 +24,6 @@ body{
   width: 100%;
   height: auto;
   border: 1px solid red;
-
 }
 .row{
   display: flex;
@@ -33,20 +32,17 @@ body{
 .box-deel-links{
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   padding: 0;
   margin:0;
 }
 .deel1{
   background-color: rgba(255, 255, 255, 0.7);
-  width: 70%;
-  padding: 20px;
+  width: 50%;
 }
 
 .openingsuren{
   border: 1px solid blue;
   width: 300px;
-  /* flex-grow: 1; */
 }
 .week-day{
  border: 1px solid green;
@@ -54,28 +50,20 @@ body{
 span.uur{
   padding-left: 20px;
 }
-
+.box1{
+  display: flex;
+}
 /*RECHTS VAN DE PARALAX*/
 .box-deel-rechts{
   display: flex;
-  width: 100%;
+  width: 50%;
   padding: 0;
   margin:0;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .deel2{
   flex-grow: 1;
 }
-/* .box1{
-  display: flex;
-  background: hotpink;
-
-}*/
-.box2{
-  display: flex;
-  width: 100%;
-  background-color: red;
-} 
 .row2{
   display: flex;
   flex-grow: 1;
@@ -89,49 +77,13 @@ span.uur{
   width: 40%;
   flex-grow: 1;
 }
-
+/*TEST*/
 
 
     </style>
 </head>
   
 <body>
-
-
-  <div class="col-sm-2" >
-    <a id="new-board-btn" class="btn btn-primary" >testbutton</a>
-  </div>
-
-  <button class="btn btn-primary" type="button">Voorschrift doorsturen</button>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-  
-      <!-- Force next columns to break to new line -->
-      <div class="w-100"></div>
-  
-      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="container">
   <div class="box1">
@@ -175,148 +127,50 @@ span.uur{
        
       </div>
     </div>
-    <div class="box-deel-rechts">
-      <div class="col-6 deel2">
-        <h3>TEST 2</h3>
-          <div class="box2">
-            <div class="row row2">
+      <div class="box-deel-rechts">
 
-
-              <div class="col-6 knoppen">KNOP 1</div>
-              <div class="col-6 knoppen">KNOP 2</div>
-
-
-
-
-              <div class="col-6 knoppen">KNOP 3</div>
-              <div class="col-6 knoppen">KNOP 4</div>
-
-
+      <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col">
+          <div class="card">
+            <p><i class="fas fa-file-medical icon-paralax"></i></p>
+            <div class="card-body">
+              <h5 class="card-title">Voorschrift doorsturen</h5>
             </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p><i class="fas fa-shopping-bag header-icons icon-paralax"></i></p>
+            <div class="card-body">
+              <h5 class="card-title">Contacteer ons</h5>
+            </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p><i class="fas fa-clipboard icon-paralax"></i></p>
+            <div class="card-body">
+              <h5 class="card-title">Reserveer product</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p><i class="fas fa-user-tag icon-paralax"></i></p>
+            <div class="card-body">
+              <h5 class="card-title">Over ons</h5>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+</div>
     </div>
   </div>
 </div>
 
-
-
-<!-- <div class="container container-end">
-<div class="row">
-    <div class="test1">
-        <h3>Digital Pharma</h3>
-        <p>TesttesttestStraat 345, 4000 Eenderwaar</p>
-        <div class="openingsuren">
-            <div class="week-day">
-              Maandag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Dinsdag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Woensdag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Donderdag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Vrijdag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Zaterdag
-            </div>
-            <div class="uur">
-              9:00-12:00 | 13:00-19:00
-            </div>
-            <div class="week-day">
-              Zondag
-            </div>
-            <div class="uur">
-              Gesloten
-            </div>
-          <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>   
-        </div>
-    </div>
-    <div class="test2">
-        <div class="row">
-       
-                <div class="colom1">
-                    <div class="col1-top">
-                        <p><i class="fas fa-file-medical icon-paralax"></i></p>
-                        Voorschrift doorsturen
-                    </div>
-                    <div class="col2-top">
-                        <p><i class="fas fa-shopping-bag header-icons icon-paralax"></i></p>
-                        Contacteer ons
-                    </div>
-                </div>
-                <div class="colom2">
-                    <div class="col1-bottom">
-                        <p><i class="fas fa-clipboard icon-paralax"></i></p>
-                        Reserveer uw product
-                    </div>
-                    <div class="col2-bottom">
-                        <p><i class="fas fa-user-tag icon-paralax"></i></p>
-                        Over ons
-                    </div>
-                </div>
-            
-        </div>
-    </div>
-</div>
-</div> -->
-<div class="container">
-  <div class="row row-cols-1 row-cols-sm-2 g-3">
-    <div class="col">
-      <div class="card">
-        <p><i class="fas fa-file-medical icon-paralax"></i></p>
-        <div class="card-body">
-          <h5 class="card-title">Voorschrift doorsturen</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <p><i class="fas fa-shopping-bag header-icons icon-paralax"></i></p>
-        <div class="card-body">
-          <h5 class="card-title">Contacteer ons</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <p><i class="fas fa-clipboard icon-paralax"></i></p>
-        <div class="card-body">
-          <h5 class="card-title">Reserveer product</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <p><i class="fas fa-user-tag icon-paralax"></i></p>
-        <div class="card-body">
-          <h5 class="card-title">Over ons</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+ 
 
 
 </body>
