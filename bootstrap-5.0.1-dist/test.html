@@ -8,168 +8,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <style>
-/* PARALAX */
-body{
-    background-color: grey;
-}
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.container{
-  display: flex;
-  width: 100%;
-  height: auto;
-  border: 1px solid red;
-}
-.row{
-  display: flex;
-}
-/*LINKS VAN DE PARALAX*/
-.box-deel-links{
-  width: 100%;
-  display: flex;
-  padding: 0;
-  margin:0;
-}
-.deel1{
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 50%;
-}
-
-.openingsuren{
-  border: 1px solid blue;
-  width: 300px;
-}
-.week-day{
- border: 1px solid green;
-}
-span.uur{
-  padding-left: 20px;
-}
-.box1{
-  display: flex;
-}
-/*RECHTS VAN DE PARALAX*/
-.box-deel-rechts{
-  display: flex;
-  width: 50%;
-  padding: 0;
-  margin:0;
-  justify-content: flex-end;
-}
-.deel2{
-  flex-grow: 1;
-}
-.row2{
-  display: flex;
-  flex-grow: 1;
-}
-.knoppen{
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px 0;
-  justify-content: center;
-  margin: 10px;
-  width: 40%;
-  flex-grow: 1;
-}
-/*TEST*/
-
-
+      .groot{
+        display: flex;
+      }
+      img{
+        width: 250px;
+        height: 250px;;
+      }
     </style>
 </head>
   
 <body>
 
-<div class="container">
-  <div class="box1">
-    <div class="row">
-      <div class="box-deel-links">
-      <div class="col-6 deel1">
-       
-        <h3>Digital Pharma</h3>
-        <p>TesttesttestStraat 345, 4000 Eenderwaar</p>
-        <div class="openingsuren">
-          <div class="dag dag1">
-            <span class="week-day">Maandag</span>
-            <span class="uur">9:00-12:00 | 13:00-19:00</span>
-          </div>
-          <div class="dag dag1">
-            <span class="week-day">Dinsdag</span>
-            <span class="uur">9:00-12:00 | 13:00-19:00</span>
-          </div>
-          <div class="dag dag1">
-            <span class="week-day">Woensdag</span>
-            <span class="uur">9:00-12:00 | 13:00-19:00</span>
-          </div>
-          <div class="dag dag1">
-            <span class="week-day">Donderdag</span>
-            <span class="uur">9:00-12:00 | 13:00-19:00</span>
-          </div>
-          <div class="dag dag1">  
-            <span class="week-day">Vrijdag</span>
-            <span class="uur">9:00-12:00 | 13:00-19:00</span>
-          </div>
-          <div class="dag dag1">
-            <span class="week-day">Zaterdag</span>
-            <span class="uur">9:00-12:00</span>
-          </div>
-          <div class="dag dag1">
-            <span class="week-day">Zondag</span>
-            <span class="uur">Gesloten</span>
-          </div>
-        </div>
-        <a href="#" class="raadpleeg" target="blank">Raadpleeg wachtdienst</a>   
-       
-      </div>
+  <section class="container container-box">
+    <div class="row teamSection">
+      <h2>Ons team</h2>
     </div>
-      <div class="box-deel-rechts">
-
-      <div class="row row-cols-1 row-cols-sm-2 g-3">
-        <div class="col">
-          <div class="card">
-            <p><i class="fas fa-file-medical icon-paralax"></i></p>
-            <div class="card-body">
-              <h5 class="card-title">Voorschrift doorsturen</h5>
+    
+        <div class="col-6 groot">
+        
+            <div class="row">
+              <div class="col-6">
+                <img src="images/persoon1.jpg" class="img fotoTeamSection" alt="card-horizontal-image">
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">NAAM</h5>
+                  <hr>
+                  <p class="card-text">Functie</p>
+                </div>
+              </div>
             </div>
+          
+            <div class="row">
+              <div class="col-6">
+                <img src="images/persoon2.jpg" class="img fotoTeamSection" alt="card-horizontal-image">
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">NAAM</h5>
+                  <hr>
+                  <p class="card-text">Functie</p>
+                </div>
+              </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <p><i class="fas fa-shopping-bag header-icons icon-paralax"></i></p>
-            <div class="card-body">
-              <h5 class="card-title">Contacteer ons</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <p><i class="fas fa-clipboard icon-paralax"></i></p>
-            <div class="card-body">
-              <h5 class="card-title">Reserveer product</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <p><i class="fas fa-user-tag icon-paralax"></i></p>
-            <div class="card-body">
-              <h5 class="card-title">Over ons</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-</div>
-    </div>
-  </div>
-</div>
-
+     
+    
+  </section>
  
 
 

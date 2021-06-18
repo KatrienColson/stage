@@ -3,7 +3,6 @@ nav{
     background-color: var(--primary);
     color: var(--colorTextLight);
     min-height: 50%;
-    /* height: auto; */
 }
 .nav-item.nav-link{
     color: green;
@@ -24,10 +23,15 @@ ul.navbar-nav{
     color: var(--colorTextLight);
     font-size: 16px;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+/* .navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
     color: var(--colorTextDark);
-}
+} */
 
+.navbar-toggler{
+    border-radius: 0;
+    border: none;
+}
 
 
 

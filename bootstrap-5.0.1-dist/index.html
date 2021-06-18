@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/wachtdienst.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mainFooter.css">
-    <!-- <link rel="stylesheet" href="css/mediaquery.css"> -->
+    <link rel="stylesheet" href="css/mediaquery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <title>Stage Digital Pharma</title>
@@ -64,6 +64,8 @@
                   </div>
                 </div>
                   <div class="col-md-1 header-icon-box">
+                  <i class="fa fa-search header-icons"></i>
+                  <p class="verbergen">|</p>
                   <i class="fas fa-shopping-bag header-icons"></i>
                   <p>|</p>
                   <i class="far fa-user header-icons"></i>
@@ -173,9 +175,9 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 uitrekken">
                 <div class="content-block-transparant">
-                  <i class="fas fa-file-medical iconWachtdiensten"></i>
+                  <i class="fas fa-file-medical"></i>
                   <h4>Voorschrift doorsturen</h4>
                 </div>
                 <div class="content-block-transparant">
@@ -183,7 +185,7 @@
                     <h4>Contacteer ons</h4>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 uitrekken">
                 <div class="content-block-transparant">
                   <i class="fas fa-shopping-bag"></i>
                   <h4>Reserveer uw product</h4>
@@ -200,10 +202,12 @@
     </div>
 
     <!-- TE RESERVEREN PRODUCTEN -->
-    <section class="container">
+    <section class="container container-box">
         <div class="row reserveerSection">
           <h2>Te reserveren producten in de kijker</h2>
+        </div>
           <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-3 rowReserveer">
+          
             <div class="col">
               <div class="card cardReserveer">
                 <img src="images/product-in-de-kijker-1.jpg" class="card-img-top" alt="card-grid-image">
@@ -244,8 +248,11 @@
                 </div>
               </div>
             </div>
+
+         
+
           </div>
-        </div>
+        
       </section>
 
 <!-- VOORSCHRIFT -->
@@ -264,17 +271,19 @@
       </div>
     </section>
 <!-- ONS TEAM -->
-    <section class="container">
+    <section class="container container-box">
       <div class="row teamSection">
         <h2>Ons team</h2>
+      </div>
+      
           <div class="col-lg-6 col-md-6 col-sm-6 cardTeamSection">
-            <div class="card cardOnsteam">
-              <div class="row g-0">
+            <div class="card">
+              <div class="row">
                 <div class="col-6 col-sm-6">
                   <img src="images/persoon1.jpg" class="img-fluid fotoTeamSection" alt="card-horizontal-image">
                 </div>
                 <div class="col-6 col-sm-6">
-                  <div class="card-body">
+                  <div class="card-body card-bodyTeam">
                     <h5 class="card-title">NAAM</h5>
                     <hr>
                     <p class="card-text">Functie</p>
@@ -299,14 +308,15 @@
               </div>
             </div>
           </div>
-      </div>
+      
     </section>
 
   <!-- WACHTDIENSTEN -->
     <section class="container-fluid wachtdienstFluid">
-      <div class="container">
+      <div class="container container-box">
         <div class="row wachtdienstSection">
           <h2 class="titleLight">Wachtdiensten</h2>
+        </div>
           <div class="row row-cols-1 row-cols-sm-3 g-3 rowWachtdiensten">
             <div class="col colWachtdiensten">
               <div class="card cardWachtdiensten">
@@ -340,7 +350,7 @@
             </div>
 
           </div>
-        </div>
+        
       </div>
     </section>
   <!-- MAIN FOOTER -->

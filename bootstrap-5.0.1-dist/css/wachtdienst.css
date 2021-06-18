@@ -1,6 +1,4 @@
-.wachtdienstSection{
-    padding: 40px 0;
-}
+
 h2.titleLight{
     color: white;
 }
@@ -19,8 +17,7 @@ hr.lineWachtdiensten{
 }
 .card.cardWachtdiensten{
     border: none;
-    max-width: 314px;
-    height: 314px;
+    height: auto;
 }
 .rowWachtdiensten{
     display: flex;
@@ -28,6 +25,9 @@ hr.lineWachtdiensten{
     margin-right: auto;
 }
 .card-title{
-    padding-top: 40px;
+    padding-top: 20px;
 }
+/* .card-tekst{
+    margin-bottom: 40px;
+} */
 

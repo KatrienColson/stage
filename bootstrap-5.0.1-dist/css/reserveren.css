@@ -1,14 +1,5 @@
-.reserveerSection{
-    padding: 40px 0;
-}
-.rowReserveer{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 .card.cardReserveer{
     border: 1px solid var(--secondary);
-    max-width: 260px;
     height: 297px;
 }
 .card-img-top{
@@ -19,13 +10,6 @@
     height: 133px;
     object-fit: cover;
 }
-.card-text{
-    padding:0;
-    margin: 0;
-}
 .card-title.card-titleReserveer{
-    margin-top: -30px;
-}
-.card-text.cad-textReserveer{
-    padding-bottom: 20px;
+    margin-top: -20px;
 }

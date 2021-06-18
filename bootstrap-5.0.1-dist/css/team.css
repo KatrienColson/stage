@@ -1,5 +1,7 @@
-.teamSection{
-    padding: 40px 0;
+.card.cardOnsteam{
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--secondary);
 }
 .fotoTeamSection{
     padding: 20px;
@@ -7,18 +9,10 @@
     height: 250px;
     object-fit: cover;
 }
-.cardTeamSection{
-    padding-top: 40px;
+.card-bodyTeam{
+    padding: 20px;
+    max-width: 250px;
+    height: 250px;
 }
-.cardTeamSection:last-child{
-    margin-right: 0;
-}
-.card-body{
-    text-align: center;
-}
-.card.cardOnsteam{
-    max-width: 500px;
-    height: 330px;
-    display: flex;
-    border: 1px solid var(--secondary);
-}
+
+
