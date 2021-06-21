@@ -8,55 +8,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/5ab5b71f08.js" crossorigin="anonymous"></script>
     <style>
-      .groot{
-        display: flex;
-      }
-      img{
-        width: 250px;
-        height: 250px;;
-      }
+
+
+section.sectionVoorschrift {
+    background-color: green;
+    position: relative;
+    z-index: 3;
+}
+.container-fluid{
+  padding:0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rowVoorschrift{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.sectionVoorschrift .image {
+    width: 100%;
+}
+.sectionVoorschrift .image img {
+    height: auto;
+    width: 100%;
+}
+.boxLinksVoorschrift{
+  display: flex;
+  width: 50%;
+  padding-left: 300px;
+}
+
+
     </style>
 </head>
   
 <body>
 
-  <section class="container container-box">
-    <div class="row teamSection">
-      <h2>Ons team</h2>
-    </div>
-    
-        <div class="col-6 groot">
-        
-            <div class="row">
-              <div class="col-6">
-                <img src="images/persoon1.jpg" class="img fotoTeamSection" alt="card-horizontal-image">
-              </div>
-              <div class="col-6">
-                <div class="card-body">
-                  <h5 class="card-title">NAAM</h5>
-                  <hr>
-                  <p class="card-text">Functie</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="row">
-              <div class="col-6">
-                <img src="images/persoon2.jpg" class="img fotoTeamSection" alt="card-horizontal-image">
-              </div>
-              <div class="col-6">
-                <div class="card-body">
-                  <h5 class="card-title">NAAM</h5>
-                  <hr>
-                  <p class="card-text">Functie</p>
-                </div>
-              </div>
-          </div>
-        </div>
-     
-    
-  </section>
+
  
+<section class="sectionVoorschrift">
+  <div class="container-fluid">
+    <div class="row rowVoorschrift">
+      <div class=".col-lg-5 col-lg-offset-1 col-sm6 boxLinksVoorschrift">
+        <div class="content-block">
+          <h2>Voorschrift doorsturen</h2>
+          <p class="lopendetekstVoorschrift">Heb je een voorschrit gekregen of een medicatielijsstje bij de hand?  Stuur het ons door in 4 gemakkelijke stappen.  
+            Wij geven je een seintje zodra je je reservatie kan komen oppikken in de apotheek.
+          </p>
+          <button class="btn btn-primary buttonVoorschrift" type="button">Voorschrift doorsturen</button>
+
+        </div>
+      </div> 
+      <div class="col-sm-6 col-xs-12">
+        <div class="image">
+          <img src="images/voorschrift.jpg" class="fotoVoorschrift" alt="voorschrift">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

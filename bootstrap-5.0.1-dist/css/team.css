@@ -1,18 +1,22 @@
-.card.cardOnsteam{
-    width: 100%;
-    display: flex;
-    border: 1px solid var(--secondary);
-}
 .fotoTeamSection{
+    width: 100%;
+    height: 250px; 
     padding: 20px;
-    max-width: 250px;
-    height: 250px;
     object-fit: cover;
-}
-.card-bodyTeam{
-    padding: 20px;
-    max-width: 250px;
-    height: 250px;
-}
+  }
+  .card-bodyTeam{
+    text-align: center;
+    padding-top: 80px;
+  }
+  .box{
+    display: flex;
+    /* flex-direction: row; */
+    width: 50%;
+    justify-content: flex-start;
+    border: 1px solid var(--secondary);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
 

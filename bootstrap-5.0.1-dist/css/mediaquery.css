@@ -6,6 +6,9 @@
     .nav-item{
         margin-top: 8px;
     }
+    .boxLinksVoorschrift{
+        padding-left: 70px;
+    }
 }
 
 /*minder dan 1000 gaat het weg*/
@@ -49,6 +52,18 @@
     .header-icon-box p{
         font-size: 1rem;
     }
+    .lopendetekstVoorschrift{
+        padding-top: 8px;
+        padding-bottom: 8px;  
+    }
+    .lopendetekstVoorschrift{
+        font-size: 12px;
+    }
+    .container-box{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  
 }
 
 @media screen and (max-width: 768px){
@@ -92,6 +107,11 @@
 @media screen and (max-width: 440px){
     .content-block-transparant{
         display: none;
+    }
+    .paralax{
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
     }
 }
 
