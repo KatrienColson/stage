@@ -21,12 +21,12 @@
 	overflow: hidden;
     border-radius: 6px;
 }
-.HOVER text {
+.HOVER .textVoorschriftButton {
 	position: relative;
 	z-index: 5;
 	transition: color var(--time);
 }
-.HOVER:hover text {
+.HOVER:hover .textVoorschriftButton {
 	color: var(--colorTextLight);
 }
 .HOVER span {
