@@ -52,7 +52,7 @@ a.raadpleeg {
     margin-top: 20px;
     position: relative;
 }
-.content-block-transparant i{
+/* .content-block-transparant i{
     width: auto;
     font-size: 50px;
     color: var(--backgroundcolorDark);
@@ -64,7 +64,7 @@ a.raadpleeg {
     left: 50%;
     -ms-transform: translate(-40%, -50%);
     transform: translate(-40%, -50%);
-}
+} */
 .content-block-transparant h4{
     margin: 0;
     position: absolute;
@@ -72,6 +72,18 @@ a.raadpleeg {
     left: 55%;
     -ms-transform: translate(-60%, -50%);
     transform: translate(-60%, -50%);
+}
+.content-block-transparant img{
+    width: 20%;
+    color: var(--backgroundcolorDark);
+}
+.content-block-transparant img{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
 }
 
 

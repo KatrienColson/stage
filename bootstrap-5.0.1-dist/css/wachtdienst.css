@@ -5,19 +5,20 @@ h2.titleLight{
 .wachtdienstFluid{
     background-color: var(--backgroundcolorPrimary);
 }
-i.fas.fa-mortar-pestle,
+/* i.fas.fa-mortar-pestle,
 i.fas.fa-stethoscope,
 i.fas.fa-tooth{
     font-size: 60px;
     text-align: center;
     padding-top: 40px;
-}
+} */
 hr.lineWachtdiensten{
     border: 2px solid var(--primary);
 }
 .card.cardWachtdiensten{
     border: none;
     height: auto;
+    display: flex;
 }
 .rowWachtdiensten{
     display: flex;
@@ -26,5 +27,11 @@ hr.lineWachtdiensten{
 }
 .card-title{
     padding-top: 20px;
+}
+.cardWachtdiensten img{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
 }
 

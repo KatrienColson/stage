@@ -82,3 +82,18 @@ header{
  }
 
 
+ .header-icon-box img{
+    color: var(--backgroundcolorDark);
+    padding-right: 12px;
+    width: 40%;
+}
+/* .header-icon-box img{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
+} */
+
+
