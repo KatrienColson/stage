@@ -10,6 +10,10 @@
 .footer-banner a{
     font-size: 14px;
 }
+.banner-top a:hover,
+.footer-banner a:hover{
+    color: var(--colorTextLight);
+}
 
 /*BANNER TOP*/
 .banner-top li{

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">                
+
+  <title>Hovereffecten</title>
+  <style>
+body{
+  background: black;
+  color: white;
+  
+}
+.container{
+      text-align: center;
+      border: 2px solid lightskyblue;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+}
+/*VOORBEELD 1*/
+.box1{
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.box1:hover{ 
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.1); 
+}
+.box1:before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    opacity: 0.9;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    animation: animate 5s infinite linear;
+}
+.box1:hover:before{
+    height: 280px;
+    width: 280px;
+    top: -55px;
+    right: -37px;
+}
+.box1 img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+.box1:hover img{ 
+  filter: grayscale(100%); 
+}
+.box1 .box-content{
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    filter: blur(10px);
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+.box1:hover .box-content{
+    filter: blur(0);
+    opacity: 1;
+    top: 80px;
+}
+.box1 .title{
+    margin: 0 0 2px;
+}
+.box1 .icon li a:hover{ 
+  box-shadow: 0 0 0 2px #fff inset; 
+}
+.content-block-transparant i{
+    width: auto;
+    font-size: 50px;
+    color: black;
+}
+.content-block-transparant i{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
+}
+.content-block-transparant h4{
+    margin: 0;
+    position: absolute;
+    top: 73%;
+    left: 55%;
+    -ms-transform: translate(-60%, -50%);
+    transform: translate(-60%, -50%);
+}
+.box1 .post{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    display: block;
+}
+.uitrekken{
+  display: flex;
+  width: 25%;
+}
+@keyframes animate{
+    0%{ background-color: #00B2E3; }
+    30%{ background-color: #76BC21; }
+    60%{ background-color: #99D0E4; }
+    100%{ background-color: #E6F7D1; }
+}
+@media only screen and (max-width:990px){
+    .box { margin: 0 0 30px; }
+}
+
+/*LINK 1*/
+.link {
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+}
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+  overflow: hidden;
+}
+.link-container {
+  transition: transform 0.4s ease;
+}
+.title {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  transition: transform 0.4s ease;
+}
+.link-title1 {
+  transform-origin: right center;
+}
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+.link:hover .link-container {
+  transform: translateY(-20px);
+}
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+
+/*LINK 2*/
+.link2 {
+   /* RESET */
+   text-decoration: none;
+   line-height: 1;
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: white;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+   border-radius: 6px;
+}
+.link2::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   transition: transform .25s ease-out;
+}
+.link2:hover { 
+   color: #fff; 
+}
+.link2:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+/*LINK 3*/
+p{
+  transform: translate(-50%);
+}
+a.link3{
+  display: block;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+a.link3::after{
+  content: "";
+  background: white;
+	mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+a.link3:hover::after{
+	height: calc(100% + 8px)
+}
+
+/*LINK 4*/
+ul {
+  display: table;
+  white-space: nowrap;
+}
+li {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  position: relative;
+}
+a.link4 {
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  position: relative;
+  padding: 16px 7px;
+  border-top: 2px solid rgba(255,255,255,0);
+  border-bottom: 2px solid rgba(255,255,255,0);
+  transition: padding .3s,border-color .3s;
+}
+a.link4:focus, 
+a.link4:hover {
+  padding: 5px 7px;
+  border-color: rgba(255,255,255,1);
+  outline: none;
+}
+a.link4::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 0;
+  color: rgba(255,255,255,0);
+  border-left: 2px solid rgba(255,255,255,0);
+  content: attr(data-text);
+  transition: max-height .3s,border-color 0s;
+}
+a.link4::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  max-height: 0;
+  color: rgba(255,255,255,0);
+  border-right: 2px solid rgba(255,255,255,0);
+  content: attr(data-text);
+  transition: max-height .3s,border-color 0s;
+}
+a.link4:focus::before, 
+a.link4:hover::before, 
+a.link4:focus::after, 
+a.link4:hover::after {
+  max-height: 100%;
+  transition-delay: .28s;
+  border-color: rgba(255,255,255,1);
+}
+
+/*VOORBEELD 5*/
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container"><h1>Hovereffecten</h1></div>
+  <br>
+  <br>
+<div class="container">
+  <div class="row">
+    <h3>VOORBEELD 1</h3>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 uitrekken">
+          <div class="box box1">
+              <img src="images/persoon1.jpg">
+              <div class="box-content">
+                  <h4 class="title">NAAM</h4>
+                  <span class="post">Functie</span>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 uitrekken">
+          <div class="box box1">
+              <img src="images/persoon2.jpg">
+              <div class="box-content">
+                  <h4 class="title">NAAM</h4> 
+                  <span class="post">Functie</span>    
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- LINK 1 -->
+<div class="container">
+  <div class="row">
+    <h3>LINK 1</h3>
+  <a href="#" class="link">
+    <span class="mask">
+      <div class="link-container">
+        <span class="link-title1 title">Home</span>
+        <span class="link-title2 title">Home</span>
+      </div>
+    </span>
+  </a>
+  <br>
+  <a href="#" class="link">
+    <span class="mask">
+      <div class="link-container">
+        <span class="link-title1 title">Openingsuren</span>
+        <span class="link-title2 title">Openingsuren</span>
+      </div>
+    </span>
+  </a>
+</div>
+</div>
+
+<!-- LINK 2 -->
+<div class="container">
+  <div class="row">
+    <h3>LINK 2</h3>
+   <div class="box">
+      <a class="link2" href="">Home</a> 
+      <a class="link2" href="">Openingsuren</a>
+      <a class="link2" href="">Over ons</a> 
+      <a class="link2" href="">Contact</a> 
+    </div>
+  </div>
+</div>
+
+<!-- LINK 3 -->
+<div class="container">
+  <div class="row">
+    <h3>LINK 3</h3>
+    <a href="http://tiagoalexandrelopes.com/" class="link3" target="_blank">My website</a>
+  </div>
+</div>
+
+<!-- LINK 4 -->
+<div class="container">
+  <div class="row">
+    <h3>LINK 4</h3>
+    <ul>
+      <li>
+        <a href="#" class="link4" data-text="Works">Home</a>
+      </li>
+      <li>
+        <a href="#" class="link4" data-text="About Me">Openingsuren</a>
+      </li>
+      <li>
+        <a href="#" class="link4" data-text="Resume">Over ons</a>
+      </li>
+      <li>
+        <a href="#" class="link4" data-text="Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- VOORBEELD 5 -->
+
+</body>
+</html>

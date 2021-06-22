@@ -1,0 +1,79 @@
+/*HOVER BUTTON*/
+
+@keyframes shake {
+	25% {
+		transform: rotate(calc(var(--angle) * -1));
+	}
+
+	50% {
+		transform: rotate(var(--angle));
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.HOVER {
+	--width: 100%;
+	--time: 0.7s;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+    border-radius: 6px;
+}
+.HOVER text {
+	position: relative;
+	z-index: 5;
+	transition: color var(--time);
+}
+.HOVER:hover text {
+	color: var(--colorTextLight);
+}
+.HOVER span {
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 0;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	background: var(--backgroundcolorPrimary);
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+.HOVER:hover span {
+	width: calc(var(--width) * 2.00);
+	padding-top: calc(var(--width) * 2.25);
+}
+.animated {
+	--angle: 5deg;
+	animation: shake 0.3s;
+}
+
+/*HOVER NAV LINK*/
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--colorTextLight);
+}
+.underline{
+    position: relative;
+  }
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--backgroundcolorPrimary);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-bottom:8px;
+}
+  
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+      margin-bottom:8px;
+    }
+}
