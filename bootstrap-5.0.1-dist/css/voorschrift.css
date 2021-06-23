@@ -1,31 +1,36 @@
-section.sectionVoorschrift {
-    background-color: var(--primary);
-    color: var(--colorTextLight);
-    position: relative;
-    z-index: 3;
+.container.containerVoorschrift::after,
+.container.containerVoorschrift::before,
+.row.rowVoorschrift::after,
+.row.rowVoorschrift::before {
+	content: " ";
+	display: table;
 }
-.container-fluid{
-    padding:0;
-    margin-right: auto;
-    margin-left: auto;
+.container.containerVoorschrift::after,
+.row.rowVoorschrift::after {
+	clear: both;
 }
-.rowVoorschrift{
-    margin-right: -15px;
-    margin-left: -15px;
-}
-/* .sectionVoorschrift .image {
-    width: 100%;
-} */
-.sectionVoorschrift .image img {
-    height: auto;
-    width: 100%;
-}
-.boxLinksVoorschrift{
-    display: flex;
-    width: 50%;
-    padding-left: 320px;
-}
-.lopendetekstVoorschrift{
+.row.rowVoorschrift {
+	display: block;
     padding-top: 40px;
-    padding-bottom: 70px;
+    margin-left: 0;
+}
+.sectionVoorschrift {
+	background: var(--primary);
+	overflow: hidden;
+}
+.sectionVoorschrift .boxPhotoVoorschrift {
+	width: 48%;
+	float: right;
+}
+.imgVoorschrift {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.sectionVoorschrift .boxPhotoVoorschrift.imgVoorschrift {
+	height: 300px;
+}
+.tekstVoorschrift{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

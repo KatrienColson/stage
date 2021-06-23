@@ -6,9 +6,6 @@
     .nav-item{
         margin-top: 8px;
     }
-    .boxLinksVoorschrift{
-        padding-left: 70px;
-    }
 }
 
 /*minder dan 1000 gaat het weg*/
@@ -58,12 +55,11 @@
     .header-icon-box img{
         width: 80%;
     }
-    .lopendetekstVoorschrift{
-        padding-top: 8px;
-        padding-bottom: 8px;  
-    }
-    .lopendetekstVoorschrift{
-        font-size: 12px;
+    .tekstVoorschrift{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        font-size: 0.75rem;
     }
     .container-box{
         padding-top: 20px;
@@ -96,6 +92,22 @@
     .content-block-transparant h4{
         font-size: 0.875rem;
     }
+    .row.rowVoorschrift{
+        padding-top: 20px;
+    }
+    .card.cardWachtdiensten{
+        height: 200px;
+    }
+    .cardWachtdiensten img{
+        padding-top: 12px;
+    }
+    .titelWachtdienst,
+    .tekstWachtdienst{
+        font-size: 0.75rem;
+    }
+    h2{
+        font-size:  1rem;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -114,6 +126,29 @@
     .uitrekken{
         padding-top: 54px;
     }
+    .row.rowVoorschrift{
+        padding-top: 10px;
+    }
+    .tekstVoorschrift{
+        padding-top: 0;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        font-size: 10px;
+    }
+    h2{
+        font-size: 0.875rem;
+    }
+    .btn,
+    .btn.btn-primary{
+        font-size: 0.875rem; 
+    }
+    .card-bodyWachtdiensten{
+        padding: 0;
+    }
+    .titelWachtdienst{
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -130,3 +165,50 @@
     }
 }
 
+/*special*/
+@media (max-width: 992px) and (min-width: 768px) {
+	.sectionVoorschrift .rowVoorschrift {
+		width: 100%;
+		float: none;
+		clear: both;
+		padding: 40px 20px;
+	}
+	.sectionVoorschrift .rowVoorschrift p {
+		font-size: 16px;
+		margin-bottom: 35px;
+	}
+}
+@media (max-width: 768px) {
+	.sectionVoorschrift .boxPhotoVoorschrift.imgVoorschrift {
+		margin: 0 auto;
+
+	}
+	.sectionVoorschrift .rowVoorschrift {
+		width: 100%;
+		padding: 35px 30px 60px 30px;
+		text-align: center;
+	}
+	.sectionVoorschrift .rowVoorschrift h2 {
+		text-align: center;
+		margin-bottom: 27px;
+	}
+	.sectionVoorschrift .rowVoorschrift p {
+		font-size: 15px;
+		text-align: left;
+		line-height: 25px;
+	}
+}
+/*.sectionVoorschrift .rowVoorschrift h2 {
+	margin-bottom: 35px;
+}
+.sectionVoorschrift .rowVoorschrift p {
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.sectionVoorschrift .rowVoorschrift .btn-primary {
+	font-size: 19px;
+	background-color: #3d5d6f;
+	border-color: #3d5d6f;
+	padding: 0.5rem 1rem;
+	width: 195px;
+} */

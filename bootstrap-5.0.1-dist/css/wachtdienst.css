@@ -17,22 +17,23 @@ hr.lineWachtdiensten{
 }
 .card.cardWachtdiensten{
     border: none;
-    height: auto;
     display: flex;
+    height: 372px;
+    justify-content: center;
 }
 .rowWachtdiensten{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 .card-title{
     padding-top: 20px;
 }
 .cardWachtdiensten img{
     width: 15%;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 40px;
+}
+.extraBoxWachtdiensten{
+    align-items: center;
+    text-align: center;
 }
 
 

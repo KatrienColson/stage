@@ -11,13 +11,17 @@
   .box{
     display: flex;
     /* flex-direction: row; */
-    width: 50%;
+    width: 48%;
     justify-content: flex-start;
     border: 1px solid var(--secondary);
     padding-left: 0;
     padding-right: 0;
   }
- 
+ .col-team{
+  display: flex;
+  justify-content: space-between;
+ }
+
 
 
 
