@@ -23,6 +23,7 @@ hr.lineWachtdiensten{
 }
 .rowWachtdiensten{
     display: flex;
+    
 }
 .card-title{
     padding-top: 20px;
@@ -35,5 +36,6 @@ hr.lineWachtdiensten{
     align-items: center;
     text-align: center;
 }
+
 
 

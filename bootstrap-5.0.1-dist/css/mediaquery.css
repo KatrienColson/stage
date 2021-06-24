@@ -35,6 +35,9 @@
     .uitrekken{
         flex-grow: 1;
     }
+    p.tekstVoorschrift{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -55,17 +58,10 @@
     .header-icon-box img{
         width: 80%;
     }
-    .tekstVoorschrift{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        font-size: 0.75rem;
-    }
     .container-box{
         padding-top: 20px;
         padding-bottom: 20px;
     }
-  
 }
 
 @media screen and (max-width: 768px){
@@ -91,9 +87,6 @@
     }
     .content-block-transparant h4{
         font-size: 0.875rem;
-    }
-    .row.rowVoorschrift{
-        padding-top: 20px;
     }
     .card.cardWachtdiensten{
         height: 200px;
@@ -126,15 +119,6 @@
     .uitrekken{
         padding-top: 54px;
     }
-    .row.rowVoorschrift{
-        padding-top: 10px;
-    }
-    .tekstVoorschrift{
-        padding-top: 0;
-        padding-bottom: 5px;
-        margin-bottom: 0;
-        font-size: 10px;
-    }
     h2{
         font-size: 0.875rem;
     }
@@ -165,50 +149,42 @@
     }
 }
 
-/*special*/
-@media (max-width: 992px) and (min-width: 768px) {
-	.sectionVoorschrift .rowVoorschrift {
-		width: 100%;
-		float: none;
-		clear: both;
-		padding: 40px 20px;
+/*special voorschrift*/
+@media (min-width: 992px) {
+	.sectionVoorschrift .boxPhotoVoorschrift { 
+		object-fit: cover;
 	}
-	.sectionVoorschrift .rowVoorschrift p {
-		font-size: 16px;
-		margin-bottom: 35px;
+	.container.containerVoorschrift { 
+		width: 970px;
 	}
 }
-@media (max-width: 768px) {
-	.sectionVoorschrift .boxPhotoVoorschrift.imgVoorschrift {
-		margin: 0 auto;
+@media (max-width: 992px) {
+	.sectionVoorschrift .boxPhotoVoorschrift { 
+		width: 100%;
+		overflow: auto;
+	}
+	.sectionVoorschrift .boxPhotoVoorschrift.imgVoorschrift { 
+		height: auto;
+	}
+	.sectionVoorschrift .boxPhotoVoorschrift.imgVoorschrift { 
+		height: auto;
+	}
+    .buttonVoorschrift{
+        margin-bottom: 20px;
+    }
+}
 
+@media (max-width: 768px) {
+	.sectionVoorschrift .boxPhotoVoorschrift { 
+		margin: 0 auto;
 	}
-	.sectionVoorschrift .rowVoorschrift {
-		width: 100%;
-		padding: 35px 30px 60px 30px;
-		text-align: center;
-	}
-	.sectionVoorschrift .rowVoorschrift h2 {
-		text-align: center;
-		margin-bottom: 27px;
-	}
-	.sectionVoorschrift .rowVoorschrift p {
-		font-size: 15px;
-		text-align: left;
-		line-height: 25px;
+    .buttonVoorschrift{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+	.container.containerVoorschrift {
+		width: 1180px;
 	}
 }
-/*.sectionVoorschrift .rowVoorschrift h2 {
-	margin-bottom: 35px;
-}
-.sectionVoorschrift .rowVoorschrift p {
-	font-size: 18px;
-	margin-bottom: 50px;
-}
-.sectionVoorschrift .rowVoorschrift .btn-primary {
-	font-size: 19px;
-	background-color: #3d5d6f;
-	border-color: #3d5d6f;
-	padding: 0.5rem 1rem;
-	width: 195px;
-} */
